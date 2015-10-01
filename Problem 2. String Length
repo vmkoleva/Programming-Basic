@@ -1,0 +1,30 @@
+using System;
+
+
+namespace Problem_2.String_Length
+{
+    class String_Length
+
+    {
+        static void Main()
+        {
+            string inputString = Console.ReadLine();
+            const int MaxLength = 20;
+            if (inputString.Length > MaxLength)
+           
+            { 
+                string newString = inputString.Substring(0, MaxLength);
+                Console.WriteLine(newString);
+            }
+
+            if (inputString.Length < MaxLength)
+            {
+                string symbol = new string('*', 20-inputString.Length);
+                Console.WriteLine("{0}{1}", inputString, symbol);
+            }
+
+            
+
+        }
+    }
+}
