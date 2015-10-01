@@ -1,0 +1,17 @@
+using System;
+
+
+namespace Problem_1.Reverse_String
+{
+    class Reverse_String
+
+    {
+        static void Main()
+        {
+            string inputString = Console.ReadLine();
+            char[] reverseString = inputString.ToCharArray();
+            Array.Reverse(reverseString);
+            Console.WriteLine(reverseString);
+        }
+    }
+}
